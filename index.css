@@ -72,11 +72,13 @@ body {
   color: red;
 }
 
-.text-head {
-  font-size: 14px;
+.main-head {
+  font-size: 14px !important;
+  font-weight: 400 !important;
 }
-.text-body {
-  font-size: 24px;
+.main-body {
+  font-size: 24px !important;
+  font-weight: 700 !important;
 }
 
 /*-------- Section content ----------*/
