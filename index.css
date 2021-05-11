@@ -1,0 +1,371 @@
+:root {
+  --primary: #ff5f5f;
+  --white: #ffffffd8;
+  --lite: #f7f7f7;
+  --clr-tag_red: #ff00003d;
+  --clr-tag_yellow: #f6c53d3d;
+  --clr-tag_green: #53bb3e3d;
+
+  --fs-tag_red: red;
+  --fs-tag_yellow: rgb(255, 157, 0);
+  --fs-tag_green: green;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-logo img {
+  margin-left: 10px;
+  width: 100px;
+}
+
+.nav-bar {
+  font-size: 1.6em;
+  min-height: 50px;
+  background-color: #333333;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  font-size: 0.6em;
+}
+.nav-item a {
+  color: var(--white);
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--white);
+}
+
+.nav-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: var(--primary);
+  margin: 0 20px;
+}
+.dropdown-toggle::after {
+  color: red;
+}
+
+/*-------- Section content ----------*/
+
+.content {
+  display: flex;
+  background-color: var(--lite);
+}
+
+.content-container {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.content-header {
+  margin: 2em 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-text > span {
+  color: var(--primary);
+  font-size: 8px;
+}
+.header-text > div {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.cta-primary {
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--white);
+  box-shadow: 2px 2px 10px #a8a8a8;
+}
+.cta-primary:hover {
+  color: var(--white);
+  box-shadow: 5px 5px 10px #a8a8a8;
+}
+
+.cta-secondary {
+  border-radius: 5px;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-dimension {
+  width: 14em;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+}
+
+/** -----Table content --------**/
+.content-table {
+  background-color: var(--white);
+  border-radius: 5px;
+  height: 100%;
+  padding: 1em;
+}
+
+.table-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tbl-search {
+  height: 30px;
+  width: 300px;
+}
+
+.table-data {
+  margin-top: 20px;
+}
+
+.table th {
+  border-top: none;
+}
+.table > tbody > tr > td {
+  font-family: inherit;
+
+  vertical-align: middle;
+  height: 8em;
+  border-bottom: 1px solid #0000001f;
+}
+
+.table tr:hover button {
+  background-color: var(--primary);
+  color: var(--white);
+  box-shadow: 2px 2px 10px #a8a8a8;
+}
+.table tr:hover svg {
+  fill: var(--primary);
+}
+
+.text-name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.text-head {
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.text-desc {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.table th {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+td .tbl-tags {
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #0000001f;
+}
+
+td .tbl-tags:not(:last-child) {
+  margin-right: 5px;
+}
+
+.table > tbody > tr:hover {
+  background-color: #ff000009;
+}
+.table svg {
+  width: 2em;
+}
+.table svg:hover {
+  fill: var(--primary);
+}
+
+.tbl-days {
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.tag_red {
+  background-color: var(--clr-tag_red);
+  color: var(--fs-tag_red);
+}
+
+.tag_yellow {
+  background-color: var(--clr-tag_yellow);
+  color: var(--fs-tag_yellow);
+}
+
+.tag_green {
+  background-color: var(--clr-tag_green);
+  color: var(--fs-tag_green);
+}
+.switch-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content-1 {
+  font-family: inherit;
+}
+.content_input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.content_input .dropdown-toggle::after {
+  color: grey;
+}
+.custom-dd {
+  border: 1px solid rgba(129, 129, 129, 0.527);
+  border-radius: 3px;
+  width: 240px;
+  height: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-i {
+  position: relative;
+  width: auto;
+  margin: 0;
+}
+
+.custom-i input {
+  width: 160px;
+  height: 40px;
+  padding: 1.5em 1em;
+  border-radius: 5px;
+}
+
+.switch-container .label-text {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.input-postfix {
+  position: absolute;
+  top: 25%;
+  right: 30px;
+  font-weight: 700;
+}
+.day-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.content-1 {
+  margin-top: 15px;
+}
+
+.content-2 {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.content-footer {
+  padding: 20px 0;
+}
+
+.footer-btn {
+  padding: 5px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-cancel {
+  padding: 5px 35px;
+  margin: 0 15px;
+  color: grey;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/***------------Toggle switch ---------***/
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #53bb3e;
+  border-color: darken(green, 10%);
+}
+.custom-switch.custom-switch-lg {
+  padding-bottom: 1em;
+}
+.custom-switch.custom-switch-lg .custom-control-label::before {
+  border-radius: 1rem;
+  height: 2em;
+  width: 4em;
+}
+.custom-switch.custom-switch-lg .custom-control-label::after {
+  border-radius: 1em;
+  height: calc(2em - 4px);
+  width: calc(2em - 4px);
+}
+.custom-switch.custom-switch-lg
+  .custom-control-input:checked
+  ~ .custom-control-label::after {
+  transform: translateX(2em);
+}
+/*********** Custom Modal ***********/
+
+@media (min-width: 576px) {
+  .custom-modal.modal-dialog {
+    max-width: 800px !important;
+  }
+}
+
+/********* Custom Tabs **************/
+.modal-tab {
+}
+.modal-tab .nav-link {
+  color: grey;
+}
+.modal-tab .nav-link.active {
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+}
+.modal-tab .nav-link a {
+  border: none;
+}
+.modal-tab .nav-link a:active {
+}
