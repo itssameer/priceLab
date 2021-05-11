@@ -68,6 +68,19 @@ body {
   background-color: var(--primary);
   margin: 0 20px;
 }
+
+.header-btn {
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.header-btn > svg {
+  font-size: 24px;
+  font-style: bold;
+  color: white;
+}
+
 .dropdown-toggle::after {
   color: red;
 }
