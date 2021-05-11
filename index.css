@@ -35,7 +35,7 @@ body {
 
 .nav-bar {
   font-size: 1.6em;
-  min-height: 50px;
+  min-height: 60px;
   background-color: #333333;
 
   display: flex;
@@ -47,6 +47,7 @@ body {
 }
 .nav-item a {
   color: var(--white);
+  font-size: 14px;
 }
 
 .nav-right {
@@ -371,6 +372,12 @@ td .tbl-tags:not(:last-child) {
 }
 /*********** Custom Modal ***********/
 
+.custom-modal span {
+  font-size: 14px !important;
+}
+.custom-modal a {
+  font-size: 14px !important;
+}
 @media (min-width: 576px) {
   .custom-modal.modal-dialog {
     max-width: 800px !important;
