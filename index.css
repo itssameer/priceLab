@@ -227,6 +227,16 @@ td > span {
   font-weight: 600;
 }
 
+.modal-text-head {
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal-text-desc {
+  font-size: 24px !important;
+  font-weight: 600;
+}
+
 .table th {
   font-size: 12px;
   font-weight: 600;
@@ -234,6 +244,7 @@ td > span {
 }
 
 td .tbl-tags {
+  font-size: 10px;
   padding: 3px 8px;
   border-radius: 3px;
   background-color: #00000011;
@@ -323,9 +334,10 @@ td .tbl-tags:not(:last-child) {
 }
 .input-postfix {
   position: absolute;
-  top: 25%;
-  right: 30px;
+  top: 30%;
+  right: 20px;
   font-weight: 700;
+  font-size: 12px;
 }
 .day-container {
   display: flex;
@@ -375,36 +387,44 @@ td .tbl-tags:not(:last-child) {
 .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #53bb3e;
   border-color: darken(green, 10%);
+  box-shadow: none !important;
 }
 .custom-switch.custom-switch-lg {
   padding-bottom: 1em;
   outline: none;
   border: none;
+  box-shadow: none !important;
 }
 .custom-switch.custom-switch-lg .custom-control-label::before {
   border-radius: 1rem;
   height: 2em;
   width: 4em;
-  /* border-color: transparent; */
+  box-shadow: none !important;
 }
 .custom-control-input:checked ~ .custom-control-label::before {
   /* border-radius: 1rem;
   height: 2em;
   width: 4em;   */
   border-color: transparent;
+  box-shadow: none !important;
 }
 
 .custom-switch.custom-switch-lg .custom-control-label::after {
   border-radius: 1em;
   height: calc(2em - 4px);
   width: calc(2em - 4px);
+  box-shadow: none !important;
 }
 .custom-switch.custom-switch-lg
   .custom-control-input:checked
   ~ .custom-control-label::after {
   transform: translateX(2em);
+  box-shadow: none !important;
 }
 /*********** Custom Modal ***********/
+.modal-content {
+  border-radius: 10px;
+}
 .modal-header .close {
   margin: 0;
 }
@@ -420,21 +440,41 @@ td .tbl-tags:not(:last-child) {
 }
 
 .custom-modal span {
-  font-size: 14px !important;
+  font-size: 14px;
 }
 .custom-modal a {
   font-size: 14px !important;
+  font-weight: 600;
 }
 @media (min-width: 576px) {
   .custom-modal.modal-dialog {
-    max-width: 800px !important;
+    max-width: 900px !important;
   }
+}
+
+.content-1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.content-2 {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 /********* Custom Tabs **************/
 
+.modal-body {
+  padding: 0;
+}
+
+.modal-tab {
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 22px;
+}
+
 .modal-container {
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .modal-tab > a {
