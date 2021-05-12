@@ -139,6 +139,10 @@ body {
   height: 30px;
   font-weight: 600;
   font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cta-primary:hover {
   color: var(--white);
@@ -151,15 +155,6 @@ body {
   color: var(--primary);
   padding: 7px 14px;
 }
-
-/* .btn-dimension {
-  width: 14em;
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-weight: 700;
-} */
 
 /** -----Table content --------**/
 .content-table {
@@ -210,6 +205,9 @@ td > span {
 .table tr:hover svg {
   fill: var(--primary);
 }
+.table tr svg {
+  fill: #33333363;
+}
 
 .text-name {
   display: flex;
@@ -226,7 +224,7 @@ td > span {
 
 .text-desc {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .table th {
@@ -380,12 +378,22 @@ td .tbl-tags:not(:last-child) {
 }
 .custom-switch.custom-switch-lg {
   padding-bottom: 1em;
+  outline: none;
+  border: none;
 }
 .custom-switch.custom-switch-lg .custom-control-label::before {
   border-radius: 1rem;
   height: 2em;
   width: 4em;
+  /* border-color: transparent; */
 }
+.custom-control-input:checked ~ .custom-control-label::before {
+  /* border-radius: 1rem;
+  height: 2em;
+  width: 4em;   */
+  border-color: transparent;
+}
+
 .custom-switch.custom-switch-lg .custom-control-label::after {
   border-radius: 1em;
   height: calc(2em - 4px);
