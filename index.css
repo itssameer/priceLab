@@ -431,7 +431,9 @@ td .tbl-tags:not(:last-child) {
 .closs-icon #ex {
   font-size: 20px !important;
   font-weight: 700;
-  margin-top: 40px !important;
+}
+.closs-icon > svg {
+  margin-top: 13px;
 }
 
 .custom-modal .modal-header,
@@ -457,7 +459,7 @@ td .tbl-tags:not(:last-child) {
   margin-left: 20px;
 }
 .content-2 {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-left: 20px;
 }
 
